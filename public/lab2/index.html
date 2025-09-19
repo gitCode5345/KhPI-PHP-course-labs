@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./process.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file_upload" id="input_file"> <br>
+        <label>
+            <input type="checkbox" name="auto_rename" value="1">
+            Automatically rename if file already exists
+        </label> <br>
+        <button type="submit">Send file</button>
+    </form> <br>
+    <form action="./text.php" method="post">
+        <input placeholder="input your text" type="text" name="text_field" id="text_id">
+        <button type="submit">Send</button>
+    </form>
+    <form action="./text.php" method="get">
+        <button type="submit">Click to read all saved data</button>
+    </form> <br>
+    <form action="./list.php" method="get">
+        <button type="submit">Click to get list of files from directory uploads</button>
+    </form>
+</body>
+</html>
