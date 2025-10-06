@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./product.php" method="post">
+        <input type="text" name="name" required placeholder="Уведіть назву товару"> <br>
+        <input type="number" name="price" required placeholder="Уведіть ціну на товар" step="0.01" min="0.00"> <br>
+        <input type="text" name="description" required placeholder="Уведіть опис до товару"> <br>
+        <button type="submit" name="add" value="product_without_discount">Add</button>
+    </form>
+    <form action="./product.php" method="get">
+        <button type="submit" name="get_products" value="0">Вивести всі товари які збережено</button>
+    </form>
+    <form action="./category.php">
+        <button type="submit">Переглянути список категорій з їх товарами(без знижки)</button>
+    </form>
+</body>
+</html>
