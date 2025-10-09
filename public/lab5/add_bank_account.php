@@ -22,6 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<p>Аккаунт успішно додано!</p>";
         }
     } catch (Exception $th) {
-        echo "<p style='color: red;'>Помилка: " . $e->getMessage() . "</p>";
+        echo "<p style='color: red;'>Помилка: " . $th->getMessage() . "</p>";
     }
 }
