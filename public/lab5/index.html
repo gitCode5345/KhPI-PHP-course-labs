@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="./add_bank_account.php" method="post" class="form-box">
+            <label>Додати аккаунт без накопичувальної системи</label>
+            <input type="text" name="currency" class="input-form" placeholder="Уведіть валюту">
+            <input type="number" min="0" name="balance" class="input-form" placeholder="Уведіть баланс">
+            <button type="submit" name="add_account_default" class="btn-submit">Додати</button>
+        </form>
+        <form action="./add_bank_account.php" method="post" class="form-box">
+            <label>Додати аккаунт з накопичувальною системою</label>
+            <input type="text" name="currency" class="input-form" placeholder="Уведіть валюту">
+            <input type="number" min="0" name="balance" class="input-form" placeholder="Уведіть баланс">
+            <button type="submit" name="add_account_saving" class="btn-submit">Додати</button>
+        </form>
+
+        <a href="./finance_operation.php">Перейти на сторінку поповнення/зняття коштів</a>
+        <a href="./money_accumulation.php">Перейти на сторінку на якій можна перевірити накопичувальну систему</a>
+    </div>
+</body>
+</html>
